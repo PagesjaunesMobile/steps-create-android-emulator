@@ -111,7 +111,7 @@ fi
 #
 # Create AVD image
 log_info "Creating AVD image ${name}"
-out=$(echo no | android create avd --force --name ${name} --target ${platform} --abi ${abi})
+out=$(echo no | android create avd --force --name ${name} --target ${platform} --abi ${abi} --skin WXGA800)
 if [ $? -ne 0 ]; then
   echo "out: $out"
 fi
